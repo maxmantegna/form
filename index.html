@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">  
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">
+      SUPER EMAIL NEWSLETTER <br />
+      SUBSCRIBE FORM
+    </h1>
+    <p id="description">
+      Kindly enter your data below to receive totally legit emails
+    </p>
+    <div class="form-box"> 
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Real name only"
+        required
+      />
+      <br />
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="No fake email here plz"
+        required
+      />
+      <br />
+      <label id="number-label" for="age">Age</label>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="10"
+        max="99"
+        placeholder="Don't care if ur old LOL"
+        required
+      />
+      <br />
+      <label for="dropodown-label">Select email amount</label>
+      <select id="dropdown" name="email-amount">
+        <option value="1w" disabled>1 per week</option>
+        <option value="1d">1 per day</option>
+        <option value="1h">1 per hour</option>
+        <option value="1m" selected>Every minute</option>
+      </select>
+      <br />
+      <p>Select subject interest</p>
+      <label for="getemails">
+        <input type="radio" id="getemails" name="interest" value="getemails" />
+            Any Email I like. Reading is my passion.</label>
+      <label for="getemails2">
+        <input type="radio" id="getemails2" name="interest" value="getemails2" />  
+            Choose for me I hate decisions.</label>
+      <label for="getemails3">
+        <input type="radio" id="getemails3" name="interest" value="getemails3" />
+            I'm feeling lucky ™</label>
+      <p>How did you find about</br>SUPER EMAIL NEWSLETTER? :D</p>
+      <label for="where-phone">
+        <input type="checkbox" name="how-find" value="phone" />
+            A friend told me on the phone.</label>
+      <label for="where-banner">
+        <input type="checkbox" name="how-find" value="banner" />
+            Saw banner and clicked.</label>
+      <label for="horario-4">
+        <input type="checkbox" name="how-find" value="father" />
+            My father is subscriptor already.</label>
+      <label for="where-dont">
+        <input type="checkbox" name="how-find" value="dont-know" />
+            Don't know how I got here ser.</label>
+      <p>Thank you note for developers</p>
+      <textarea placeholder="Good vibes only, no profanity."></textarea>
+      <br />
+      <button id="submit" type="submit">SUBSCRIBE NOW</button>
+    </form>
+</div>
+  </body>
+</html>
